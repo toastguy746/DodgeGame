@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\jeongseheon_unity_test\\DodgeV1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89D82261-55AD-1546-69FB-58E4E5D97D16}|Assembly-CSharp.csproj|d:\\jeongseheon_unity_test\\dodgev1\\assets\\scripts\\playerbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D82261-55AD-1546-69FB-58E4E5D97D16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D82261-55AD-1546-69FB-58E4E5D97D16}|Assembly-CSharp.csproj|D:\\jeongseheon_unity_test\\DodgeV1\\assets\\scripts\\rotate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D82261-55AD-1546-69FB-58E4E5D97D16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D82261-55AD-1546-69FB-58E4E5D97D16}|Assembly-CSharp.csproj|D:\\jeongseheon_unity_test\\DodgeV1\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D82261-55AD-1546-69FB-58E4E5D97D16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D82261-55AD-1546-69FB-58E4E5D97D16}|Assembly-CSharp.csproj|D:\\jeongseheon_unity_test\\DodgeV1\\assets\\scripts\\startmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D82261-55AD-1546-69FB-58E4E5D97D16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\startmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D82261-55AD-1546-69FB-58E4E5D97D16}|Assembly-CSharp.csproj|D:\\jeongseheon_unity_test\\DodgeV1\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D82261-55AD-1546-69FB-58E4E5D97D16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D82261-55AD-1546-69FB-58E4E5D97D16}|Assembly-CSharp.csproj|D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\EnemyBullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D82261-55AD-1546-69FB-58E4E5D97D16}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\EnemyBullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\Bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\BulletSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\BulletSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnemyBullet.cs",
+              "DocumentMoniker": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\EnemyBullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyBullet.cs",
+              "ToolTip": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\EnemyBullet.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyBullet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T07:12:28.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerBullet.cs",
+              "DocumentMoniker": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\PlayerBullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerBullet.cs",
+              "ToolTip": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\PlayerBullet.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerBullet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T07:10:45.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StartManager.cs",
+              "DocumentMoniker": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\StartManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StartManager.cs",
+              "ToolTip": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\StartManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StartManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T05:48:11.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T05:32:55.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rotate.cs",
+              "DocumentMoniker": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\Rotate.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Rotate.cs",
+              "ToolTip": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\Rotate.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Rotate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T05:01:37.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\Bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
+              "ToolTip": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\Bullet.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwBwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:27:05.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BulletSpawner.cs",
+              "DocumentMoniker": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\BulletSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BulletSpawner.cs",
+              "ToolTip": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\BulletSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BulletSpawner.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswBYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T06:52:20.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
+              "ToolTip": "D:\\jeongseheon_unity_test\\DodgeV1\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:19:02.881Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
