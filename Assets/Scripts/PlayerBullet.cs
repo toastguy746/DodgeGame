@@ -27,6 +27,12 @@ public class PlayerBullet : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
+            GameManager gameManager = FindObjectOfType<GameManager>();
+            if (gameManager != null)
+            {
+                gameManager.enemyCount--;
+                Debug.Log("적 사망! 남은 적 수 : "+gameManager.enemyCount);
+            }
         }
 
         else if (other.tag == "Wall")

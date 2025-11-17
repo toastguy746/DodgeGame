@@ -46,14 +46,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void Die()
-    {
-        GameManager gameManager = FindObjectOfType<GameManager>();
-        if (gameManager != null)
+        public void Die()
         {
-            gameManager.EndGame();
-        }
-        gameObject.SetActive(false);
+            GameManager gameManager = FindObjectOfType<GameManager>();
+            if (gameManager != null)
+            {
+                gameManager.EndGame();
+            }
+            gameObject.SetActive(false);
         
-    }
+        }
 }
