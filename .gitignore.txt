@@ -2,8 +2,7 @@
 # Unity + Visual Studio .gitignore
 # =========================
 
-# Unity generated folders
-[Libraries to Ignore]
+# Unity generated folders (DO NOT COMMIT)
 Library/
 Temp/
 Obj/
@@ -59,13 +58,13 @@ desktop.ini
 # Crash reports
 sysinfo.txt
 
-# Rider (JetBrains IDE) project settings
+# Rider project settings
 .idea/
 
-# Collaborate (옛날 유니티 협업 기능) 임시 파일
+# Collaborate (old Unity) temp files
 .collabignore
 
-# Plastic SCM 관련 임시 파일 (있을 경우)
+# Plastic SCM
 PlasticSCM/
 
 # Addressables / AssetBundles
