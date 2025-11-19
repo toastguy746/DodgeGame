@@ -34,7 +34,7 @@ public class EnemyBullet : MonoBehaviour
             PlayerController playerController = other.GetComponent<PlayerController>();
             if(playerController != null)
             {
-                playerController.Die();
+                playerController.TakeDamagePlayer(10);
             }
         }
 

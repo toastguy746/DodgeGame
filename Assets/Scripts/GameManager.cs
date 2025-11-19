@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public Text recordText;
     public Text myrecordText;
     public GameObject gameOverText;
+    public GameObject gameClearText;
 
     public int enemyCount;
 
@@ -71,7 +72,7 @@ public class GameManager : MonoBehaviour
                 if (currentLevelIndex < levelPrefabs.Count)
                     LevelLoad(currentLevelIndex);
                 else
-                    EndGame();
+                    ClearGame();
             }
         }
 
@@ -89,24 +90,22 @@ public class GameManager : MonoBehaviour
 
     public void LevelLoad(int currentLevelIndex)
     {
-        if (currentLevelIndex >= levelPrefabs.Count)
+        if (enemyCount < 1)
         {
-            Debug.Log("끌리얼, 현재 인덱스 : " + currentLevelIndex);
-            return;
+            isLoadingLevel = true;
+            if (currentLevelObj != null)
+            {
+                Destroy(currentLevelObj);
+            }
+
+            currentLevelObj = Instantiate(levelPrefabs[currentLevelIndex]);
+            isgameClear = false; // 새로운 레벨 시작 시 클리어 플래그 리셋
+            isLoadingLevel = false;
+            Debug.Log("레벨 로딩 완료!");
+            CountEnemy();
+            Instance = this;
         }
-
-        isLoadingLevel = true;
-
-        if (currentLevelObj != null)
-        {
-            Destroy(currentLevelObj);
-        }
-
-        currentLevelObj = Instantiate(levelPrefabs[currentLevelIndex]);
-        isgameClear = false; // 새로운 레벨 시작 시 클리어 플래그 리셋
-        isLoadingLevel = false;
-        CountEnemy();
-        Instance = this;
+        
     }
 
     public void CountEnemy()
@@ -117,6 +116,7 @@ public class GameManager : MonoBehaviour
         //이 코드는 호출시마다 적의 수 업데이트를 함
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         enemyCount = enemies.Length;
+        Debug.Log("적의 수 : " + enemyCount);
     }
 
     //게임 끝남 상태 변경, 게임 끝남 텍스트 띄우고 베스트 타임 경신 역할 함
@@ -130,14 +130,31 @@ public class GameManager : MonoBehaviour
             bestTime = surviveTime;
             PlayerPrefs.SetFloat("BestTime", bestTime);
         }
-
-
         recordText.text = "Best Score : " + (int)bestTime * 5;
         myrecordText.text = "My Score : " + (int)surviveTime * 5;
+
+        Debug.Log("게임 끝이용");
+    }
+
+    public void ClearGame()
+    {
+        isgameClear = true;
+        gameOverText.SetActive(true);
+        gameClearText.SetActive(true);
+        float bestTime = PlayerPrefs.GetFloat("BestTime");
+        if (surviveTime > bestTime)
+        {
+            bestTime = surviveTime;
+            PlayerPrefs.SetFloat("BestTime", bestTime);
+        }
+        recordText.text = "Best Score : " + (int)bestTime * 5;
+        myrecordText.text = "My Score : " + (int)surviveTime * 5;
+
+        Debug.Log("게임 클리어!!!");
     }
 
     //적의 수를 세는 함수
-    
 
-    
+
+
 }

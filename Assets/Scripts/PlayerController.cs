@@ -6,15 +6,31 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRigidBody;
     public float speed = 8f; //1000
+    public float playerRotationSpeed = 1f;
+    public float playerMaxHp = 100;
+    public float playerHp;
+    private float damage;
+
     // Start is called before the first frame update
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody>();
+        playerHp = playerMaxHp;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (playerHp > playerMaxHp)
+        {
+            playerHp = playerMaxHp;
+        }
+
+        if (playerHp <= 0)
+        {
+            Die();
+        }
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -27,33 +43,47 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            playerRigidBody.AddForce(0f, 0f, speed);
+            playerRigidBody.AddForce(transform.forward * speed);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            playerRigidBody.AddForce(0f, 0f, -speed);
+            playerRigidBody.AddForce(transform.forward * -speed);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            playerRigidBody.AddForce(speed, 0f, 0f);
+            playerRigidBody.AddForce(transform.right * speed);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            playerRigidBody.AddForce(-speed, 0f, 0f);
+            playerRigidBody.AddForce(-transform.right * speed);
         }
 
+        if(Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Rotate(0f, -playerRotationSpeed * Time.deltaTime, 0f);
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Rotate(0f, playerRotationSpeed * Time.deltaTime, 0f);
+        }
 
     }
+     public void TakeDamagePlayer(float damage)
+     {
+        playerHp -= damage;
+        Debug.Log("체력 닳음! 현재 체력 : " + playerHp);
+     }
 
-        public void Die()
+     public void Die()
+     {
+        GameManager gameManager = FindObjectOfType<GameManager>();
+        if (gameManager != null)
         {
-            GameManager gameManager = FindObjectOfType<GameManager>();
-            if (gameManager != null)
-            {
-                gameManager.EndGame();
-            }
-            gameObject.SetActive(false);
-        
+            gameManager.EndGame();
         }
+        gameObject.SetActive(false);
+        
+     }
 }
