@@ -25,14 +25,12 @@ public class PlayerBullet : MonoBehaviour
 
         if (other.tag == "Enemy")
         {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
-            GameManager gameManager = FindObjectOfType<GameManager>();
-            if (gameManager != null)
+            EnemyController enemyController = other.GetComponent<EnemyController>();
+            if (enemyController != null)
             {
-                gameManager.enemyCount--;
-                Debug.Log("적 사망! 남은 적 수 : "+gameManager.enemyCount);
+                enemyController.TakeDamageEnemy(10);
             }
+            Destroy(gameObject);
         }
 
         else if (other.tag == "Wall")

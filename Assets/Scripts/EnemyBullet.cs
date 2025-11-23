@@ -12,7 +12,6 @@ public class EnemyBullet : MonoBehaviour
         bulletRigidbody = GetComponent<Rigidbody>();
         //오브젝트내에서 트랜스폼은 직접 참조 가능
         bulletRigidbody.velocity = transform.forward * speed;
-        Destroy(gameObject,3f);
     }
 
     // Update is called once per frame

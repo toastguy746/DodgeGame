@@ -60,14 +60,27 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.62f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\MainCamera_Action.cs" />
     <Compile Include="Assets\Scripts\StartManager.cs" />
+    <Compile Include="Assets\Scripts\EnemyController.cs" />
+    <Compile Include="Assets\GhostCharacter_Free\Scripts\GhostScript.cs" />
     <Compile Include="Assets\Scripts\EnemyBullet.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\EnemyBulletSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerBulletSpawner.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\PlayerBullet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Lowpoly Forest Pack Winter\Lowpoly Forest Pack READ ME - Copy.txt" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_SETTINGS.cginc" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR.cginc" />
+    <None Include="Assets\GhostCharacter_Free\Documents\readme_txt.txt" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Prefabs\Texts\_Make your own text effect.txt" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_PASSES.cginc" />
+    <None Include="Assets\Resources\Outline.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_URP.cginc" />
+    <None Include="Assets\Snow_Man\Documentation\Documentation(Snow_Man3D).txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -832,29 +845,45 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.Timeline.Player.csproj">
-      <Project>{6C989DF1-F888-F230-D372-39C036ECCFDA}</Project>
-      <Name>Unity.Timeline.Player</Name>
+    <ProjectReference Include="Unity.ProBuilder.Player.csproj">
+      <Project>{409B8BCC-3B3F-70FA-93F3-0CA688D74C22}</Project>
+      <Name>Unity.ProBuilder.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{A9F92CC3-F802-19A2-C9A8-D3198E76E81F}</Project>
-      <Name>UnityEngine.UI.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
-      <Project>{E5471D3A-C786-E1D4-016D-D20D4E00A3BC}</Project>
-      <Name>Unity.TextMeshPro.Player</Name>
+    <ProjectReference Include="KinoBloom.Runtime.Player.csproj">
+      <Project>{3EE192BE-0B96-0050-D75E-0729E94D9E57}</Project>
+      <Name>KinoBloom.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Player.csproj">
       <Project>{34328981-C873-E50E-9925-EFBFEA905E58}</Project>
       <Name>Unity.VisualScripting.Core.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.State.Player.csproj">
-      <Project>{B8B17A0C-5712-9580-4122-5F2774700AA5}</Project>
-      <Name>Unity.VisualScripting.State.Player</Name>
+    <ProjectReference Include="UnityEngine.UI.Player.csproj">
+      <Project>{A9F92CC3-F802-19A2-C9A8-D3198E76E81F}</Project>
+      <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.Player.csproj">
       <Project>{36606359-4A63-F0C2-91D0-F20549474B6D}</Project>
       <Name>Unity.VisualScripting.Flow.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.Player.csproj">
+      <Project>{6C989DF1-F888-F230-D372-39C036ECCFDA}</Project>
+      <Name>Unity.Timeline.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRRuntime.Player.csproj">
+      <Project>{3364EA08-FBC2-4C05-9573-576A271CA0FF}</Project>
+      <Name>CFXRRuntime.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRDemo.Player.csproj">
+      <Project>{F78C3378-8E65-F090-230E-8D25C8D8D1D0}</Project>
+      <Name>CFXRDemo.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
+      <Project>{E5471D3A-C786-E1D4-016D-D20D4E00A3BC}</Project>
+      <Name>Unity.TextMeshPro.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.State.Player.csproj">
+      <Project>{B8B17A0C-5712-9580-4122-5F2774700AA5}</Project>
+      <Name>Unity.VisualScripting.State.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

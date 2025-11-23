@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     //이거 다른데에서도 코드 파일에서도 쓸게용
     public static GameManager Instance;
     //
-    public Text timeText;
+    public Text scoreText;
     public Text recordText;
     public Text myrecordText;
     public GameObject gameOverText;
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     public int enemyCount;
 
-    private float surviveTime;
+    public float score;
     private bool isgameOver;
     public bool isgameClear;
 
@@ -30,10 +30,12 @@ public class GameManager : MonoBehaviour
     public int currentLevelIndex = 0;
     private bool isLoadingLevel = true;
 
+
     // Start is called before the first frame update
     void Start()
     {
-        surviveTime = 0;
+
+        score = 0;
         isgameOver = false;
         isgameClear = false;
         
@@ -60,10 +62,12 @@ public class GameManager : MonoBehaviour
         if (!isgameOver)
         {
             //매 프레임마다 점수 추가(살아남은 초)
-            surviveTime += Time.deltaTime;
+            //surviveTime += Time.deltaTime;
             //서바이브 타임에 5배를 해서 점수로 변환(초의 5배)
-            timeText.text = "Score : " + (int)surviveTime * 5;
+            //timeText.text = "Score : " + (int)surviveTime * 5;
             //파이선에서는 print("Time : ",surviveTime) 형식으로 작성
+            scoreText.text = "Score : " + score;
+
 
             if (!isLoadingLevel && enemyCount < 1 && !isgameClear)
             {
@@ -122,33 +126,33 @@ public class GameManager : MonoBehaviour
     //게임 끝남 상태 변경, 게임 끝남 텍스트 띄우고 베스트 타임 경신 역할 함
     public void EndGame()
     {
+        float bestScore = PlayerPrefs.GetFloat("bestScore");
         isgameOver = true;
         gameOverText.SetActive(true);
-        float bestTime = PlayerPrefs.GetFloat("BestTime");
-        if (surviveTime > bestTime)
+        if (score > bestScore)
         {
-            bestTime = surviveTime;
-            PlayerPrefs.SetFloat("BestTime", bestTime);
+            bestScore = score;
+            PlayerPrefs.SetFloat("bestScore", bestScore);
         }
-        recordText.text = "Best Score : " + (int)bestTime * 5;
-        myrecordText.text = "My Score : " + (int)surviveTime * 5;
+        recordText.text = "Best Score : " + bestScore;
+        myrecordText.text = "My Score : " + score;
 
         Debug.Log("게임 끝이용");
     }
 
     public void ClearGame()
     {
+        float bestScore = PlayerPrefs.GetFloat("bestScore");
         isgameClear = true;
         gameOverText.SetActive(true);
         gameClearText.SetActive(true);
-        float bestTime = PlayerPrefs.GetFloat("BestTime");
-        if (surviveTime > bestTime)
+        if (score > bestScore)
         {
-            bestTime = surviveTime;
-            PlayerPrefs.SetFloat("BestTime", bestTime);
+            bestScore = score;
+            PlayerPrefs.SetFloat("BestScore", bestScore);
         }
-        recordText.text = "Best Score : " + (int)bestTime * 5;
-        myrecordText.text = "My Score : " + (int)surviveTime * 5;
+        recordText.text = "Best Score : " + bestScore;
+        myrecordText.text = "My Score : " + score;
 
         Debug.Log("게임 클리어!!!");
     }

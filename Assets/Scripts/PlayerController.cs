@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     public float playerRotationSpeed = 1f;
     public float playerMaxHp = 100;
     public float playerHp;
-    private float damage;
 
     // Start is called before the first frame update
     void Start()
@@ -24,11 +23,6 @@ public class PlayerController : MonoBehaviour
         if (playerHp > playerMaxHp)
         {
             playerHp = playerMaxHp;
-        }
-
-        if (playerHp <= 0)
-        {
-            Die();
         }
 
         float x = Input.GetAxis("Horizontal");
@@ -74,9 +68,13 @@ public class PlayerController : MonoBehaviour
      {
         playerHp -= damage;
         Debug.Log("체력 닳음! 현재 체력 : " + playerHp);
-     }
+        if (playerHp <= 0)
+        {
+            PlayerDie();
+        }
+    }
 
-     public void Die()
+     public void PlayerDie()
      {
         GameManager gameManager = FindObjectOfType<GameManager>();
         if (gameManager != null)
